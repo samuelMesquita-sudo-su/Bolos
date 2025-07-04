@@ -1,20 +1,32 @@
-package pacote;
+package SIstemaDeBolos;
 
 public class Bolo {
 	String massa;
 	String formato;
-	double tamanho;
+	String tamanho;
+	String data;
+	String especificacao;
+	String endereco;
+	String nome;
 	
-	public Bolo(String massa, String formato, double tamanho) {
+	public Bolo(String nome, String massa, String formato,String tamanho, String data, String especificacao, String endereco ) {
+		this.nome=nome;
 		this.massa = massa;
-		this.formato=formato;
-		this.tamanho=tamanho;
+		this.formato = formato;
+		this.tamanho = tamanho;
+		this.data = data;
+		this.especificacao = especificacao;
+		this.endereco=endereco;
 	}
 	
 	public String informacao() {
-		return "Massa do bolo: " + massa 
+		return "Nome: " + nome
+				+"\nEndereço: " + endereco
+				+"\nMassa do bolo: " + massa 
 				+"\nFormato do bolo: " + formato 
-				+"\nTamanho do bolo: " + tamanho;
+				+"\nTamanho do bolo: " + tamanho
+				+"\nEspecificações: " + especificacao
+				+"\nData: " + data;
 	}
 	
 }
