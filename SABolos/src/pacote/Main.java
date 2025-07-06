@@ -1,4 +1,4 @@
-package SIstemaDeBolos;
+package pacote;
 
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
