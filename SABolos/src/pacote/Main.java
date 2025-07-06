@@ -16,7 +16,7 @@ public class Main {
 			}else if (tipo.equals("Cliente")){
 				menuCliente();
 			}else if (tipo.equals("Atendente")){
-				String senha = JOptionPane.showInputDialog(null, "Digite a senha");
+				String senha = JOptionPane.showInputDialog(null, "Digite a senha", "Senha do atendente", JOptionPane.QUESTION_MESSAGE);
 				if (senha.equals("senha123")){
 					menuAtendente();	
 				}
