@@ -16,7 +16,14 @@ public class Main {
 			}else if (tipo.equals("Cliente")){
 				menuCliente();
 			}else if (tipo.equals("Atendente")){
-				menuAtendente();
+				String senha = JOptionPane.showInputDialog(null, "Digite a senha");
+				if (senha.equals("senha123")){
+					menuAtendente();	
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "Senha incorreta, acesso negado");
+				} 
+				
 			}
 		}while(saindo == false);
 	}
@@ -71,7 +78,7 @@ public class Main {
 		do {
 			String[] inf = {"Fazer pedido","Exibir informações dos pedidos","Sair"};
 			String escolha = (String) JOptionPane.showInputDialog(
-					null, "Selecione uma opção" , "Usuário", JOptionPane.QUESTION_MESSAGE, null, inf , inf[0]);
+					null, "Selecione uma opção" , "Cliente", JOptionPane.QUESTION_MESSAGE, null, inf , inf[0]);
 			//
 			if (escolha == null){
 				JOptionPane.showMessageDialog(null, "Saindo");
