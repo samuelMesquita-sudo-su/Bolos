@@ -1,4 +1,4 @@
-package SIstemaDeBolos;
+package pacote;
 
 public class Bolo {
 	String massa;
